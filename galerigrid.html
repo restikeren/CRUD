@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .image {
+      overflow: hidden;
+    }
+
+    .image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <div class="image"><img src="https://i.pinimg.com/originals/4e/e1/e3/4ee1e35942af438c4d448ec9f8998914.png" alt="My Neighbour Totoro"></div>
+    <div class="image"><img src="https://i.pinimg.com/736x/4e/3d/80/4e3d805bb3c46870f79e6b9e4a345b5b.jpg" alt="ponyo"></div>
+    <div class="image"><img src="https://i.pinimg.com/736x/42/4e/71/424e71ca18258ac3d341f893af430402.jpg" alt="The secret World of Arrietty"></div>
+    <div class="image"><img src="https://i.pinimg.com/originals/61/22/8f/61228fe9afb9d9a04289408cbd994d8f.jpg" alt="Howls moving castle"></div>
+    <div class="image"><img src="https://i.pinimg.com/originals/72/0c/cd/720ccd231ae49af5b388692368f80683.jpg" alt="Whisper of the Heart"></div>
+    <div class="image"><img src="https://i.pinimg.com/originals/62/24/61/6224617858e4df66c8e6642301c1f775.jpg" alt="The Wind Rises"></div>
+  </div>
+</body>
+</html>

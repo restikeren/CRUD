@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pendaftaran Mahasiswa Baru</title>
+  <style>
+    body {
+      font-family:  helvetica, sans-serif;
+      max-width: 700px;
+      margin: auto;
+    }
+    h2 {
+        text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: light;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-image: url('data:image/svg+xml;utf8,<svg fill="%23444444" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: right 8px center;
+      padding-right: 30px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+      resize: vertical;
+      height: 50px;
+    }
+
+    .btn {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Pendaftaran Mahasiswa Baru</h2>
+  <form action="#">
+    <div class="form-group">
+      <label for="npm">NPM (Nomor Pokok Mahasiswa)</label>
+      <input type="text" id="npm" name="npm" required>
+    </div>
+    <div class="form-group">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" required>
+    </div>
+    <div class="form-group">
+      <label for="alamat">Alamat</label>
+      <textarea id="alamat" name="alamat" required></textarea>
+    </div>
+    <div>
+    <label for="jk">Jenis Kelamin</label>
+        <input type="radio" name="jk" id="laki_laki" value="Laki-Laki"> Laki-Laki
+        <br>
+        <input type="radio" name="jk" id="perempuan" value="Perempuan"> Perempuan
+        <br>
+    </div>
+    <div class="form-group">
+        <br>
+    </table>
+    <label for="prodi">Program Studi</label>
+    <select name="prodi" id="prodi">
+        <option value="Teknik Informatika">Teknik Informatika</option>
+        <option value="Sistem Informasi">Sistem Informasi</option>
+    </select>
+    <br>
+      </select>
+    </div>
+    <button type="submit" class="btn">Tambah</button>
+  </form>
+</div>
+
+</body>
+</html>
