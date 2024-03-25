@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<style>
+	.judul{
+		color: rgb(51, 51, 239) ;
+	}
+	.nav-item:hover{
+	background-color: aqua;
+	}
+</style>
+
+<body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-end">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="https://ghiblicollection.com/">
+			<img src="https://upload.wikimedia.org/wikipedia/id/b/b0/Ghibli.gif" alt="Logo" width="80" height="35" class="d-inline-block align-text-top">
+			Studio Ghibli
+		  </a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+		
+		
+	<section id="home">
+		<div class="container mt-5">
+			<h1></h1>
+			<br>
+			<div class="row">
+				<div class="col-md-4 mb-3">
+					<div class="card">
+						<img src="https://m.media-amazon.com/images/M/MV5BOTc3YmM3N2QtODZkMC00ZDE5LThjMTQtYTljN2Y1YTYwYWJkXkEyXkFqcGdeQXVyODEzNjM5OTQ@._V1_FMjpg_UX1000_.jpg">
+						<div class="card-body">
+							<h5 class="card-title">Ponyo</h5><p></p>
+							<p class="card-text">The son of a sailor, 5-year-old Sosuke lives a quiet life on an oceanside cliff with his mother Lisa. One fateful day, he finds a beautiful goldfish trapped in a bottle on the beach and upon rescuing her, names her Ponyo. But she is no ordinary goldfish. <br>
+                            </p>
+							<a href="https://www.imdb.com/title/tt0876563/?ref_=tt_mv_close" class="btn btn-primary">Read More</a>
+						</div>
+					</div>
+				</div>
+	
+				<div class="col-md-4 mb-3">
+					<div class="card">
+						<img src="https://m.media-amazon.com/images/M/MV5BZDg0MWNmNjktMGEwZC00ZDlmLWI1MTUtMDBmNjQzMWM2NjBjXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg">
+						<div class="card-body">
+							<h5 class="card-title">Whisper of the Heart</h5>
+							<p class="card-text">
+								Tama New Town, Tokyo, 1994. Intrigued by the mysterious bibliophile who reads the same books as her, 14-year-old daydreamer Shizuku has a life-changing encounter with a strange alley cat instead. </p><br>
+							<a href="https://www.imdb.com/title/tt0113824/?ref_=tt_sims_tt_i_7" class="btn btn-primary">Read More</a>
+						</div>
+					</div>
+				</div>
+ 
+				<div class="col-md-4 mb-3">
+					<div class="card">
+						<img src="https://m.media-amazon.com/images/M/MV5BNmM4YTFmMmItMGE3Yy00MmRkLTlmZGEtMzZlOTQzYjk3MzA2XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg">
+						<div class="card-body">
+							<h5 class="card-title">Howl's Moving Castle</h5>
+							<p class="card-text">
+								When an unconfident young woman is cursed with an old body by a spiteful witch, her only chance of breaking the spell lies with a self-indulgent yet insecure young wizard and his companions in his legged, walking castle.
+                            </p>
+							<a href="https://www.imdb.com/title/tt0347149/?ref_=tt_sims_tt_i_11" class="btn btn-primary">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+		
+			<section id="contact">
+				<div class="container mt-5">
+					<h1 class="judul">Contact Me</h1>
+					<form>
+						<div class="form-group">
+							<label for="emailInput">Email address</label>
+							<input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+						</div>
+						<div class="form-group">
+							<label for="nameInput">First Name</label>
+							<input type="text" class="form-control" placeholder="Enter your name">
+							<label for="nameInput">Last Name</label>
+							<input type="text" class="form-control" placeholder="Enter your name">
+						</div>
+						<div class="form-group">
+							<label for="messageInput">Message</label>
+							<textarea class="form-control" id="messageInput" rows="5" placeholder="Enter your message"></textarea>
+							<input type = "checkbox" name = "maths" value = "on"> I agree to the terms and conditions
+						</div>
+						<button type="submit" class="btn btn-primary">Send</button>
+					</form>
+					<br>
+					<br>
+				</div>
+			
+				<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+				<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+					integrity="sha384-Cx3hh/7sOQkKlVJvn12lKmZ+15bI1m0Xen7oqxM2dLm7owf+cFjOm1r+yJw91e6U"
+					crossorigin="anonymous"></script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+			</section>
+</body>
